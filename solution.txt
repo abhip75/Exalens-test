@@ -1,0 +1,12 @@
+function apartmentHunting(blocks, reqs) {
+   var indexArr = blocks.map(function(k)
+    { 
+     return Math.abs(k - blocks) 
+    })
+    var min = Math.min.apply(Math, indexArr)
+    return blocks[indexArr.indexOf(min)]
+}
+
+// Do not edit the line below.
+exports.apartmentHunting = apartmentHunting;
+
